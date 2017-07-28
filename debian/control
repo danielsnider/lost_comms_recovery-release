@@ -1,0 +1,12 @@
+Source: ros-kinetic-lost-comms-recovery
+Section: misc
+Priority: extra
+Maintainer: Daniel Snider <danielsnider12@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-actionlib, ros-kinetic-actionlib-msgs, ros-kinetic-catkin, ros-kinetic-geometry-msgs, ros-kinetic-move-base-msgs, ros-kinetic-rospy, ros-kinetic-sensor-msgs
+Homepage: http://wiki.ros.org/lost_comms_recovery
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-lost-comms-recovery
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-actionlib, ros-kinetic-actionlib-msgs, ros-kinetic-geometry-msgs, ros-kinetic-move-base-msgs, ros-kinetic-rospy, ros-kinetic-sensor-msgs
+Description: If your robot loses connection to the base station it will stop motors or navigate home.
